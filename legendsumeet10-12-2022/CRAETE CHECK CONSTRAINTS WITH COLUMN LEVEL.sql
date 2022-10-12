@@ -9,6 +9,3 @@ CREATE TABLE emp7 (
 
 insert into emp7 values(1,'sumeet','sde',5000,5)
 insert into emp7 values(2,'sumeet','sde',4000,9)
-
-
-
