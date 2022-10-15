@@ -90,4 +90,8 @@ where  branch!='IT' and branch!='bcom';
 
 select *
 from std
-where marks BETWEEN 60 AND 90;
+where marks NOT BETWEEN 50 AND 60;
+
+select *
+from std
+where  branch IS NULL;
