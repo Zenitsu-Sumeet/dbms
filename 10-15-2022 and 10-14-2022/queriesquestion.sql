@@ -95,3 +95,7 @@ where marks NOT BETWEEN 50 AND 60;
 select *
 from std
 where  branch IS NULL;
+
+select *
+from fact1
+where fname like 'a%';
