@@ -21,9 +21,9 @@ End;
 DECLARE
    temp varchar(20);
 BEGIN
-   Select employee_name into temp 
-   from employee2  where employee_name='rohit';
-  
+   Select sname into temp
+   from std  where sname='arkit';
+
 exception
    WHEN no_data_found THEN
       dbms_output.put_line('Specified data not found');
@@ -33,12 +33,12 @@ end;
 -----TOO_MANY_ROWS-----------
 DECLARE
    temp varchar(20);
-  
+
 BEGIN
-  
-   SELECT employee_name into temp from employee2;
+
+   SELECT sname into temp from std;
    dbms_output.put_line(temp);
-  
+
 EXCEPTION
    WHEN too_many_rows THEN
       dbms_output.put_line('error trying to SELECT too many rows');
@@ -48,10 +48,10 @@ end;
 
 ----Value Error-------
 DECLARE
-   temp number;   
-  
+   temp number;
+
 BEGIN
-   SELECT employee_name into temp from employee2 where employee_name='KAVI';
+   SELECT sname into temp from std where sname='arkit';
    dbms_output.put_line('The employee_name is '||temp);
   
 EXCEPTION
