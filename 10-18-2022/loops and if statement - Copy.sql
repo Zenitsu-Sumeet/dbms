@@ -21,9 +21,11 @@ DECLARE
     c number;
 BEGIN
     B:=10;
-    C:=20;
+    C:=-20;
     if(C>B) THEN
         dbms_output.put_line('C is maximum');
+    else
+         dbms_output.put_line('B is maximum');
     end if;
 end;
 /
